@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.lnrgrd {
+  background: #001124;
+  color: white !important;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);}
+
+.bggrd {
+background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);;
+}
+
+ul li {
+  color: white !important;
+  background-color: transparent !important;
+}
+
+.MINH-100
+{
+  min-height: 100vh;
+}
