@@ -43,13 +43,25 @@ const Navbar = () => {
     return (
         <div>
             <nav className="navbar navbar-light bg-light">
-                <div className="container-fluid">
+                <div className=" px-4">
                     <div className='row'>
-                        <div className='col-md-8'>
+                        <div className='col-md-9 d-flex justify-content-between'>
 
                             <Link to="/">
                                 <p className="navbar-brand">Pacta Canada </p>
                             </Link>
+                            <div className='d-flex'>
+
+                            <Link to="/login">
+                                <p className="navbar-brand">Login /</p>
+                            </Link>
+                            <Link to="/register">
+                                <p className="navbar-brand">Register </p>
+                            </Link>
+                            </div>
+                        </div>
+
+                        <div className='col-md-3 d-flex justify-content-center'>
                             <form className="d-flex">
 
                                 <input
@@ -63,15 +75,6 @@ const Navbar = () => {
                                     Search
                                 </button>
                             </form>
-                        </div>
-
-                        <div className='col-md-4'>
-                            <Link to="/login">
-                                <p className="navbar-brand">Login /</p>
-                            </Link>
-                            <Link to="/register">
-                                <p className="navbar-brand">Register </p>
-                            </Link>
                         </div>
                     </div>
                 </div>
