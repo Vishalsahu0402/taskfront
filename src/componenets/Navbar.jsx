@@ -15,7 +15,7 @@ const Navbar = () => {
         setError('');
 
         try {
-            const res = await fetch(`http://localhost:5000/api/search?q=${encodeURIComponent(query)}`);
+            const res = await fetch(`https://task-server-4x4g.onrender.com/api/search?q=${encodeURIComponent(query)}`);
             const data = await res.json();
 
             if (res.ok) {
