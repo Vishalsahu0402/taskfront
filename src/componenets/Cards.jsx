@@ -51,7 +51,10 @@ const Cards = () => {
 
             <div className="container-fluid">
                 <div className="row">
-                    {projectsSearch ? projectsSearch?.map((data, index) => <div key={index} className="col-md-6 col-lg-4  mb-4"><div className="card lnrgrd" style={{ width: "18rem" }}>
+                    {projectsSearch ? projectsSearch?.map((data, index) => <div key={index} className="col-md-6 col-lg-4  mb-4"><div className="card lnrgrd"  style={{
+                        display: "flex",
+                        justifyContent: "center"
+                    }}>
                         <div className="card-body">
                             <h5 className="card-title">{data?.title}</h5>
                             <p className="card-text">
