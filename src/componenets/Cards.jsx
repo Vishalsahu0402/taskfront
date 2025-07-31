@@ -51,7 +51,7 @@ const Cards = () => {
 
             <div className="m-4">
                 <div className="row">
-                    {projectsSearch ? projectsSearch?.map((data, index) => <div key={index} className="col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center align-items-center"><div className="card lnrgrd" style={{
+                    {projectsSearch ? projectsSearch?.map((data, index) => <div key={index} className="col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center align-items-center mb-3"><div className="card lnrgrd" style={{
                         display: "flex",
                         justifyContent: "center"
                     }}>
@@ -80,7 +80,7 @@ const Cards = () => {
 
                         </div>
                     </div>
-                    </div>) : projects?.map((data, index) => <div key={index} className="col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center align-items-center"><div className="card lnrgrd" style={{
+                    </div>) : projects?.map((data, index) => <div key={index} className="col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center align-items-center mb-3"><div className="card lnrgrd" style={{
                         display: "flex",
                         justifyContent: "center"
                     }}>
