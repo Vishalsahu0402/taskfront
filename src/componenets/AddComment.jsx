@@ -18,7 +18,7 @@ const AddComment = () => {
         const token = localStorage.getItem("token");
 
         try {
-            const res = await fetch(`http://localhost:5000/api/comments/${id}/comments`, {
+            const res = await fetch(`https://task-server-4x4g.onrender.com/api/comments/${id}/comments`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
