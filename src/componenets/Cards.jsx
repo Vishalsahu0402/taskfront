@@ -25,7 +25,7 @@ const Cards = () => {
     const handleSubmit = async () => {
 
         try {
-            const res = await fetch("http://localhost:5000/api/projects", {
+            const res = await fetch("https://task-server-4x4g.onrender.com/api/projects", {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json",
