@@ -42,26 +42,26 @@ const Navbar = () => {
 
     return (
         <div>
-            <nav className="navbar navbar-light bg-light">
+            <nav className="p-3 bg-dark text-white">
                 <div className=" px-4">
                     <div className='row'>
-                        <div className='col-md-9 d-flex justify-content-between'>
+                        <div className='col-md-9 d-flex justify-content-between align-items-center'>
 
-                            <Link to="/">
-                                <p className="navbar-brand">Pacta Canada </p>
+                            <Link to="/" style={{textDecoration:"none"}}>
+                                <p className="mb-0" style={{fontSize:"25px",color:"White",fontWeight:"500"}}>Pacta Canada </p>
                             </Link>
                             <div className='d-flex'>
 
                             <Link to="/login">
-                                <p className="navbar-brand">Login /</p>
+                                <p className="mb-0" style={{fontSize:"13px",color:"White",fontWeight:"500"}}>Login /</p>
                             </Link>
                             <Link to="/register">
-                                <p className="navbar-brand">Register </p>
+                                <p className="mb-0" style={{fontSize:"13px",color:"White",fontWeight:"500"}}>Register </p>
                             </Link>
                             </div>
                         </div>
 
-                        <div className='col-md-3 d-flex justify-content-center'>
+                        <div className='col-md-3 d-flex justify-content-center align-items-center'>
                             <form className="d-flex">
 
                                 <input
