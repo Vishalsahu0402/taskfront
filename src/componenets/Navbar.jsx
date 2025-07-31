@@ -45,14 +45,14 @@ const Navbar = () => {
             <nav className="navbar navbar-light bg-light">
                 <div className="container-fluid">
                     <Link to="/">
-                        <a className="navbar-brand">Pacta Canada </a>
+                        <p className="navbar-brand">Pacta Canada </p>
                     </Link>
                     <form className="d-flex">
                     <Link to="/login">
-                        <a className="navbar-brand">Login /</a>
+                        <p className="navbar-brand">Login /</p>
                     </Link>
                     <Link to="/register">
-                        <a className="navbar-brand">Register </a>
+                        <p className="navbar-brand">Register </p>
                     </Link>
                         
                         <input

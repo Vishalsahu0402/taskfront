@@ -95,7 +95,7 @@ const AddProject = () => {
 
 
                 <div className='d-flex justify-content-center'>
-                    <button type="button" class="btn btn-warning my-2" onClick={handleSubmit}>Add Project</button>
+                    <button type="button" className="btn btn-warning my-2" onClick={handleSubmit}>Add Project</button>
 
                 </div>
 

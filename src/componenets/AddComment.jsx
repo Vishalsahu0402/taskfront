@@ -60,7 +60,7 @@ const AddComment = () => {
                     />
                 </div>
                 <div className='d-flex justify-content-center'>
-                    <button type="button" class="btn btn-warning my-2" onClick={submitComment}>Add Feedback</button>
+                    <button type="button" className="btn btn-warning my-2" onClick={submitComment}>Add Feedback</button>
 
                 </div>
             </form>

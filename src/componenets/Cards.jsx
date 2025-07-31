@@ -51,7 +51,7 @@ const Cards = () => {
 
             <div className="container-fluid">
                 <div className="row">
-                    {projectsSearch ? projectsSearch?.map((data, index) => <div key={index} className="col-md-6 col-lg-4  mb-4"><div className="card lnrgrd"  style={{
+                    {projectsSearch ? projectsSearch?.map((data, index) => <div key={index} className="col-sm-6 col-md-4 col-lg-3 "><div className="card lnrgrd"  style={{
                         display: "flex",
                         justifyContent: "center"
                     }}>
@@ -67,15 +67,15 @@ const Cards = () => {
                         </ul>
                         <div className="card-body d-flex justify-content-between">
                             <Link to={data?.githubLink}>
-                                <button type="button" class="btn btn-success me-1">GitHub-Link</button>
+                                <button type="button" className="btn btn-success me-1">GitHub-Link</button>
                             </Link>
                             <Link to={data?.liveLink}>
-                                <button type="button" class="btn btn-info me-1">Live Link</button>
+                                <button type="button" className="btn btn-info me-1">Live Link</button>
                             </Link>
                         </div>
                         <div className='d-flex justify-content-center'>
 
-                            <button onClick={() => goToPageB(data)} type="button" class="btn btn-warning my-2">Add Feedback</button>
+                            <button onClick={() => goToPageB(data)} type="button" className="btn btn-warning my-2">Add Feedback</button>
 
 
                         </div>
@@ -93,15 +93,15 @@ const Cards = () => {
                         </ul>
                         <div className="card-body d-flex justify-content-between">
                             <Link to={data?.githubLink}>
-                                <button type="button" class="btn btn-success me-1">GitHub-Link</button>
+                                <button type="button" className="btn btn-success me-1">GitHub-Link</button>
                             </Link>
                             <Link to={data?.liveLink}>
-                                <button type="button" class="btn btn-info me-1">Live Link</button>
+                                <button type="button" className="btn btn-info me-1">Live Link</button>
                             </Link>
                         </div>
                         <div className='d-flex justify-content-center'>
 
-                            <button onClick={() => goToPageB(data)} type="button" class="btn btn-warning my-2">Add Feedback</button>
+                            <button onClick={() => goToPageB(data)} type="button" className="btn btn-warning my-2">Add Feedback</button>
 
 
                         </div>
