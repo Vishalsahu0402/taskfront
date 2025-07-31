@@ -44,28 +44,36 @@ const Navbar = () => {
         <div>
             <nav className="navbar navbar-light bg-light">
                 <div className="container-fluid">
-                    <Link to="/">
-                        <p className="navbar-brand">Pacta Canada </p>
-                    </Link>
-                    <form className="d-flex">
-                    <Link to="/login">
-                        <p className="navbar-brand">Login /</p>
-                    </Link>
-                    <Link to="/register">
-                        <p className="navbar-brand">Register </p>
-                    </Link>
-                        
-                        <input
-                            className="form-control me-2"
-                            type="search"
-                            placeholder="Search"
-                            aria-label="Search"
-                            onChange={(e) => setQuery(e.target.value)}
-                        />
-                        <button className="btn btn-outline-success" type="submit" onClick={handleSearch}>
-                            Search
-                        </button>
-                    </form>
+                    <div className='row'>
+                        <div className='col-md-8'>
+
+                            <Link to="/">
+                                <p className="navbar-brand">Pacta Canada </p>
+                            </Link>
+                            <form className="d-flex">
+
+                                <input
+                                    className="form-control me-2"
+                                    type="search"
+                                    placeholder="Search"
+                                    aria-label="Search"
+                                    onChange={(e) => setQuery(e.target.value)}
+                                />
+                                <button className="btn btn-outline-success" type="submit" onClick={handleSearch}>
+                                    Search
+                                </button>
+                            </form>
+                        </div>
+
+                        <div className='col-md-4'>
+                            <Link to="/login">
+                                <p className="navbar-brand">Login /</p>
+                            </Link>
+                            <Link to="/register">
+                                <p className="navbar-brand">Register </p>
+                            </Link>
+                        </div>
+                    </div>
                 </div>
             </nav>
 
